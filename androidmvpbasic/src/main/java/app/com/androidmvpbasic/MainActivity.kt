@@ -1,4 +1,4 @@
-package app.com.espressotesting
+package app.com.androidmvpbasic
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity(), MainView {
         adapter = UserAdapter()
         recyclerview.layoutManager = LinearLayoutManager(this)
         recyclerview.adapter = adapter
+
+
 
         button_1.setOnClickListener {
             presenter?.getUserList()
