@@ -28,6 +28,12 @@ class MainActivityTest {
         onView(withIndex(withId(R.id.tv_name),0)).check(matches(isDisplayed()))
     }
 
+
+    @Test
+    fun performClick(){
+        
+    }
+
     private fun withIndex(matcher: Matcher<View>, index: Int): Matcher<View> {
         return object : TypeSafeMatcher<View>() {
             var currentIndex = 0

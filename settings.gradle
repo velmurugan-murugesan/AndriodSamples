@@ -1,1 +1,1 @@
-include ':app',':androidmvpbasic',':espressotesting'
+include ':app',':androidmvpbasic',':espressotesting', ':mockitotesting', ':robolecticstesting', ':dragger2'
