@@ -1,22 +1,20 @@
-package app.com.dragger2
+package app.com.dagger2mvp
 
+import android.app.Application
+import android.content.Context
+import com.google.gson.FieldNamingPolicy
 import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
+import okhttp3.Cache
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
-import javax.inject.Singleton
 import retrofit2.converter.gson.GsonConverterFactory
-import com.google.gson.FieldNamingPolicy
-import com.google.gson.GsonBuilder
-import okhttp3.Cache
-import android.app.Application
-
-
-
+import javax.inject.Singleton
 
 @Module
-class ApiModule() {
+class ApiModule {
 
     private var mBaseUrl = "http://www.mocky.io/v2/"
 
@@ -29,9 +27,9 @@ class ApiModule() {
 
     @Provides
     @Singleton
-    fun provideHttpCache(application: Application): Cache {
+    fun provideHttpCache(context: Context): Cache {
         val cacheSize = 10 * 1024 * 1024
-        return Cache(application.cacheDir, cacheSize.toLong())
+        return Cache(context.cacheDir, cacheSize.toLong())
     }
 
     @Provides
@@ -59,7 +57,5 @@ class ApiModule() {
                 .client(okHttpClient)
                 .build()
     }
-
-
 
 }
