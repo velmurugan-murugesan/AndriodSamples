@@ -1,7 +1,5 @@
 package app.com.androidmvpbasic
 
 interface MainView : BaseView{
-
-    fun updateUsers(users: List<User>)
-
+    fun updateMovieList(t: List<Movie>)
 }

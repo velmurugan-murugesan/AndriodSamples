@@ -1,19 +1,30 @@
 package app.com.androidmvpbasic
 
-import android.content.Context
+import android.util.Log
+import io.reactivex.SingleObserver
+import io.reactivex.disposables.Disposable
 
-class MainPresenter(mContext: Context) : BasePresenter<MainView>() {
+class MainPresenter() : BasePresenter<MainView>() {
 
-    fun getUserList() {
 
-        val users = mutableListOf<User>()
 
-        users.add(User("Velmurugan", 23, "Chennai"))
-        users.add(User("Manchu", 23, "Madurai"))
+    fun getMovieList() {
+        val movieList = ApiInterface.create().movieList()
+        subscribe(movieList, object : SingleObserver<List<Movie>> {
+            override fun onSubscribe(d: Disposable) {
 
-        getV().updateUsers(users)
+            }
+
+            override fun onSuccess(t: List<Movie>) {
+                Log.d("onSuccess", t.toString())
+                getV().updateMovieList(t)
+            }
+
+            override fun onError(e: Throwable) {
+                Log.d("onError", e.message)
+            }
+        })
 
     }
-
 
 }
