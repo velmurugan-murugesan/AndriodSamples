@@ -8,7 +8,6 @@ import android.content.Context
 import android.content.Intent
 import android.content.ServiceConnection
 import android.util.Log
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 
