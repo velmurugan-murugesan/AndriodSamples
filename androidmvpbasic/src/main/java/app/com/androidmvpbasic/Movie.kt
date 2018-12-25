@@ -1,3 +1,11 @@
 package app.com.androidmvpbasic
 
-data class Movie(val category: String,val imageUrl: String, val name: String, val desc: String)
+import io.realm.RealmObject
+import io.realm.annotations.PrimaryKey
+
+open class Movie() : RealmObject() {
+    @PrimaryKey public open var category: String = ""
+    var imageUrl: String? = null
+    var name: String? = null
+    var desc: String? = null
+}
