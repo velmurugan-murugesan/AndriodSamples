@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GetCurrentSpeedAndroidExample</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="info">Waiting for GPS...</string>
+
+</resources>

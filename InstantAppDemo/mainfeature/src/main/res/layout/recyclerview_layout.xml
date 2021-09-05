@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textviewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/textViewDirector"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_toEndOf="@+id/imageViewImage" />
+
+            <ImageView
+                android:id="@+id/imageViewImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/ic_launcher_background"
+                android:contentDescription="@string/app_name"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/textViewDirector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_alignBottom="@+id/imageViewImage"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/imageViewImage" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

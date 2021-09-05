@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/small_padding"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextRegisterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:layout_margin="@dimen/small_padding"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextRegisterPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pin"
+        android:layout_margin="@dimen/small_padding"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/editTextRegisterconfirmPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_pin"
+        android:layout_margin="@dimen/small_padding"
+        android:inputType="numberPassword" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_padding"
+        android:textStyle="bold"
+        android:background="@color/white"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/register" />
+</LinearLayout>

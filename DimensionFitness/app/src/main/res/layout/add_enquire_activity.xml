@@ -1,0 +1,126 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:layout_scrollFlags="scroll|enterAlways"
+
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/input_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address"
+            app:met_floatingLabel="normal" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/input_source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/source"
+            app:met_floatingLabel="normal" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/input_trainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/trainer"
+            app:met_floatingLabel="normal" />
+
+        <!--<android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/comments"
+                android:lines="4"/>
+        </android.support.design.widget.TextInputLayout>-->
+
+        <Button
+            android:id="@+id/enq_save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/save"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

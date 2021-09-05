@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ps_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ed_height"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextDomainName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ed_height"
+            android:layout_margin="@dimen/small_margin"
+            android:inputType="textPersonName"
+            android:textColor="@color/textcolor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/small_margin"
+            android:orientation="horizontal">
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupDomains"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ed_height"
+                android:layout_margin="@dimen/small_margin"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonCom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ed_height"
+                    android:layout_weight="1"
+                    android:text=".COM"
+                    android:textColor="@color/textcolor" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonTopD"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ed_height"
+                    android:layout_weight="1"
+                    android:text="TOPD"
+                    android:textColor="@color/textcolor" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonGenD"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ed_height"
+                    android:layout_weight="1"
+                    android:text="GEND"
+                    android:textColor="@color/textcolor" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ed_height"
+        android:layout_margin="@dimen/small_margin"
+        android:background="@color/button_background"
+        android:onClick="searchDomain"
+        android:text="@string/search"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold" />
+
+</LinearLayout>

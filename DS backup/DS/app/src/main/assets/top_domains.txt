@@ -1,0 +1,5 @@
+.ac
+.com
+.org
+.net
+.info

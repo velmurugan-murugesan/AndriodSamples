@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DS</string>
+
+    <string name="search">Search</string>
+    <string name="full_search">FS</string>
+    <string name="prefix_search">PS</string>
+    <string name="suffix_search">SS</string>
+    <string name="com_domain">.COM</string>
+    <string name="topdomain">TOPD</string>
+    <string name="genderateddomains">GEND</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="app_background">#6c6a6a</color>
+    <color name="layout_background">#6c6a6a</color>
+
+    <color name="app_textcolor">#000000</color>
+
+    <!--category layout-->
+    <color name="grid_bg">#17f48d</color>
+    <color name="grid_layout_bg">#e2e7e4</color>
+    <color name="category_title_bg">#54bc82</color>
+    <color name="video_layout_bg">#595a5b</color>
+
+    <color name="video_desc_font_color">#c7bcbc</color>
+    <color name="play_btn_color">#47494d</color>
+</resources>

@@ -1,0 +1,20 @@
+<div class="login-page">
+		<div>
+			<h1>NoteMyEvent</h1>
+		</div>
+		<div class="form">
+			  <form class="register-form">
+					<input type="text" placeholder="name"/>
+					<input type="password" placeholder="password" />
+					<input type="text" placeholder="email address"/>
+					<button>create</button>
+					<p class="message">Already registered? <a href="">Sign In</a></p>
+				</form>
+				<form class="login-form">
+					<input type="text" placeholder="username" ng-model="userLogin.username"/>
+					<input type="password" placeholder="password" ng-model="userLogin.password"/>
+					<button ng-click="login()" >login</button>
+					<p class="message">Not registered? <a href="">Create an account</a></p>
+				</form>
+			</div>
+</div>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layout_background"
+    android:orientation="vertical"
+    android:padding="@dimen/small_padding">
+
+    <TextView
+        android:id="@+id/textViewSelectName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ed_height"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/lemon"
+        android:padding="@dimen/small_padding"
+        android:text="TextView"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSelect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ed_height"
+        android:layout_weight="1"
+        android:fontFamily="@font/lemon"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonSelectCom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/lemon"
+            android:text=".COM"
+            android:textColor="@color/textcolor" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSelectTopD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/lemon"
+            android:text="TOPD"
+            android:textColor="@color/textcolor" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSelectGenD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/lemon"
+            android:text="GEND"
+            android:textColor="@color/textcolor" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSelectSearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ed_height"
+        android:layout_weight="1"
+        android:background="@color/button_background"
+        android:text="@string/search"
+        android:fontFamily="@font/lemon"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold" />
+</LinearLayout>

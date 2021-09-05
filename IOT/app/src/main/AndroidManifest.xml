@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.velm.iot" >
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".MyApp"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".activities.LoginActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.GatewayActivity"
+            android:parentActivityName=".activities.DashBoardActivity"
+            android:label="@string/action_gateway"></activity>
+
+        <activity android:name=".activities.DashBoardActivity" android:label="Dash Board"></activity>
+        <activity android:name=".activities.GatewayNodeActivity"
+            android:parentActivityName=".activities.GatewayActivity"></activity>
+        <activity android:name=".activities.DetailsActivity" android:label="Gateway Details"
+            android:parentActivityName=".activities.GatewayNodeActivity"></activity>
+        <activity android:name=".activities.CreateGatewayActivity" android:label="@string/action_settings"
+            android:parentActivityName=".activities.GatewayActivity"></activity>
+
+        <activity android:name=".activities.GatewayNodeListActivity" android:label="Node" android:parentActivityName=".activities.DashBoardActivity"></activity>
+
+        <activity android:name=".activities.ScheduleActivity" android:label="@string/schedule" android:parentActivityName=".activities.GatewayNodeActivity"></activity>
+    </application>
+
+</manifest>

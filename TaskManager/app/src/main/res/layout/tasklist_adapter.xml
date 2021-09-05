@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small_padding"
+    android:padding="@dimen/small_padding"
+    android:background="@color/white">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="4dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/small_padding"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textViewTaskDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        android:layout_margin="@dimen/small_padding"
+        android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/small_padding">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/created" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/updated" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/small_padding">
+
+            <TextView
+                android:id="@+id/textViewDateCreated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingRight="@dimen/small_padding"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:text="HEllo"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textViewDateUpdated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/small_padding"
+                android:textSize="10sp"
+                android:textColor="@color/black"/>
+            </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_padding">
+
+        <Button
+            android:id="@+id/buttonEditTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="Edit" />
+
+        <Button
+            android:id="@+id/buttonDeleteTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:text="Delete" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</android.support.v7.widget.CardView>
+    </LinearLayout>

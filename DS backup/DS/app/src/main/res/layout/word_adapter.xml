@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layout_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewWord"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ed_height"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="@dimen/small_padding"
+        android:text="TextView"
+        android:textColor="@color/textcolor"
+        android:textSize="18sp"
+        android:fontFamily="@font/lemon"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ed35_dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/lemon"
+            android:background="@color/button_background"
+            android:text=".COM"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonTopD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/button_background"
+            android:text="TOPD"
+            android:fontFamily="@font/lemon"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonGenD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/button_background"
+            android:text="GEND"
+            android:fontFamily="@font/lemon"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

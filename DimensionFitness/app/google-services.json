@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "514950034862",
+    "firebase_url": "https://dimensionfitness-dc530.firebaseio.com",
+    "project_id": "dimensionfitness-dc530",
+    "storage_bucket": "dimensionfitness-dc530.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514950034862:android:b949eddcbda6167e",
+        "android_client_info": {
+          "package_name": "rajaapps.com.dimensionfitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514950034862-5m36eof2se2tbn2hbpir88nrecfi2clk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rajaapps.com.dimensionfitness",
+            "certificate_hash": "deb44b85bc3f80da29311312c0efa8034862dbb9"
+          }
+        },
+        {
+          "client_id": "514950034862-01m206gvken6hfv79q8su9r7qu2ur82a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRtuX9qBY_NAu2Fdfwf0RsgCGOKt6wMmE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514950034862-01m206gvken6hfv79q8su9r7qu2ur82a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

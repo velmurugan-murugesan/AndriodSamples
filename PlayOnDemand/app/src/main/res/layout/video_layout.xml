@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/video_layout_bg"
+    android:padding="@dimen/app_padding"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/videoTitle"
+        android:textColor="@color/app_textcolor"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/videoTitle">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imVideoThumb"
+            android:scaleType="fitXY"
+            android:src="@drawable/img2"
+            android:padding="@dimen/app_padding"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/videoTitle"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/video_desc_font_color"
+            android:id="@+id/videoDesc"
+            android:layout_below="@+id/imVideoThumb"
+            android:scrollbars="vertical"
+            android:padding="@dimen/layout_padding"
+            android:textStyle="normal"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/btnPlay" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="PLAY"
+        android:id="@+id/btnPlay"
+        android:background="@color/play_btn_color"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

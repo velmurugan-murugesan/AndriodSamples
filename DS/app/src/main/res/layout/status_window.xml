@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layout_background"
+    android:orientation="vertical">
+
+    <!--<TextView
+        android:id="@+id/textViewWindowName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewWindowStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerviewWindow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/small_padding"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/buttonWindowClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/button_background"
+        android:text="Close"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold" />
+</LinearLayout>

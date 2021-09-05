@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textViewGatewayName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ed_height"
+        android:layout_alignParentTop="true"
+        android:gravity="left|center"
+        android:textColor="@color/text_color" />
+
+    <!--<Button
+        android:id="@+id/buttonGatewayConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/button_bg"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        android:text="Connect" />-->
+
+    <TextView
+        android:id="@+id/textViewGatewayStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewGatewayName"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/text_color" />
+</RelativeLayout>

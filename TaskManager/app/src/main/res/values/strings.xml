@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Task Manager</string>
+
+    <string name="username">Username</string>
+    <string name="pin">Pin</string>
+    <string name="login">Login</string>
+
+    <string name="confirm_pin">Confirm Pin</string>
+
+    <string name="new_user">New User</string>
+    <string name="new_task">New Task</string>
+    <string name="register">Register</string>
+
+    <string name="created">Created</string>
+    <string name="updated">Updated</string>
+    <string name="task_name">Task Name</string>
+    <string name="task_desc">Description</string>
+    <string name="logout">Logout</string>
+</resources>

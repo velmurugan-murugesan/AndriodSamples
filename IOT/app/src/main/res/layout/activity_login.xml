@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg"
+    android:paddingTop="150dp"
+
+    tools:context=".activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Company Log in "
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ed_height"
+            android:background="@color/edittext_bg"
+            android:drawableLeft="@drawable/login"
+            android:fontFamily="monospace"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:padding="@dimen/small_padding"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ed_height"
+            android:background="@color/edittext_bg"
+            android:drawableLeft="@drawable/pwd"
+            android:fontFamily="monospace"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="@dimen/small_padding"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ed_height"
+            android:background="@color/button_bg"
+            android:text="Login"
+            android:textColor="@color/text_color"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

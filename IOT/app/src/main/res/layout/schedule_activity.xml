@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <com.appyvet.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rangebar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        custom:tickEnd="24"
+        custom:temporaryPins="false"
+        custom:tickInterval="1"
+        custom:tickStart="0" />
+
+    <TextView
+        android:id="@+id/textViewRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"/>
+
+    <Switch
+        android:id="@+id/switchSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textColor="@color/text_color"
+        android:text="Repeat" />
+
+    <include layout="@layout/repeat_layout"></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/saveSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ed_height"
+        android:background="@color/button_bg"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:text="Save" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/buttonDeleteSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ed_height"
+        android:background="@color/button_bg"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:text="Delete" />
+
+</LinearLayout>
