@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LiveWIdget</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="opens_at">Opens at</string>
+    <string name="closes_at">Closes at</string>
+    <string name="ist">IST</string>
+    <string name="open">Open</string>
+
+</resources>
