@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools" package="com.imageuploader">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera2"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/subaru_logo_new"
+            android:usesCleartextTraffic="true"
+            android:supportsRtl="true"
+            android:name=".base.MyApp"
+            android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.imageuploader.features.imageupload.ImageUploadActivity"
+                  android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+        <activity android:name="com.imageuploader.features.splash.SplashActivity"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.imageuploader.features.login.LoginActivity"/>
+
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="com.imageuploader.sample.fileprovider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name="com.imageuploader.features.galleryview.GalleryActivity" />
+        <activity android:name="com.imageuploader.features.gallerydetails.GalleryDetailsActivity" />
+        <activity android:name=".features.dashboard.DashBoardActivity"/>
+        <activity android:name=".createticket.CreateTicketActivity"/>
+        <activity android:name=".features.viewticket.ViewTicketActivity"/>
+        <activity android:name=".features.ticketdetails.TicketDetailsActivity"/>
+    </application>
+
+</manifest>

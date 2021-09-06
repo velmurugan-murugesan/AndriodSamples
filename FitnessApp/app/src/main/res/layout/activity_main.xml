@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_medium"
+        android:text="Today"
+        android:textAppearance="@style/App.TextAppearance.Caption"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_medium"
+        android:text="Mon, 24 April"
+        android:visibility="gone"
+        android:textAppearance="@style/App.TextAppearance.SubTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textToday" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardStepCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_medium"
+        app:cardCornerRadius="@dimen/space_medium"
+        app:cardElevation="@dimen/space_small"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textDate">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="@dimen/space_medium"
+                app:cpb_background_progressbar_color="#b6bbd8"
+                app:cpb_background_progressbar_color_direction="right_to_left"
+                app:cpb_background_progressbar_width="10dp"
+                app:cpb_progress="500"
+                app:cpb_progress_direction="to_right"
+                app:cpb_progress_max="1500"
+                app:cpb_start_angle="0"
+                app:cpb_progressbar_color="#3f51b5"
+                app:cpb_progressbar_color_direction="right_to_left"
+                app:cpb_progressbar_color_end="@color/purple_700"
+                app:cpb_progressbar_color_start="@color/purple_200"
+                app:cpb_progressbar_width="10dp"
+                app:cpb_round_border="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/totalStepsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1500"
+                android:textAppearance="@style/App.TextAppearance.SubTitle"
+                app:layout_constraintBottom_toBottomOf="@id/circularProgressBar"
+                app:layout_constraintEnd_toEndOf="@id/circularProgressBar"
+                app:layout_constraintStart_toStartOf="@id/circularProgressBar"
+                app:layout_constraintTop_toTopOf="@id/circularProgressBar" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textStepsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_medium"
+                android:text="Today Count"
+                android:textAppearance="@style/App.TextAppearance.Caption"
+                app:layout_constraintEnd_toStartOf="@+id/circularProgressBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/todayStepsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_small"
+                android:text="1400 Steps"
+                android:textAppearance="@style/App.TextAppearance.SubTitle"
+                app:layout_constraintStart_toStartOf="@+id/textStepsCount"
+                app:layout_constraintTop_toBottomOf="@id/textStepsCount" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:menu="@menu/bottom_navigation_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

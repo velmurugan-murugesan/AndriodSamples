@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+    <TextView
+            tools:text="@tools:sample/full_names"
+            style="@style/TextNormal"
+            android:id="@+id/text_partnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <TextView
+            tools:text="@tools:sample/full_names"
+            style="@style/TextNormal"
+            android:id="@+id/text_partname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+</LinearLayout>

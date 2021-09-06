@@ -1,0 +1,2 @@
+rootProject.name = "MaterialMotionAnimationExample"
+include ':app'

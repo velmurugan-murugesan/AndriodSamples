@@ -1,6 +1,5 @@
 package com.example.cleanarchitectureandroid.ui.login
 
-import android.util.Log
 import android.view.View
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

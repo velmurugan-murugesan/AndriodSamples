@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.imageuploader.widgets.AppToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Create Ticket"
+            app:right_icon_visible="false"
+            app:left_icon_visible="true"
+            app:left_icon_background="@drawable/back_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true">
+
+                <AutoCompleteTextView
+                        android:hint="@string/part_number_or_karban_number"
+                        android:id="@+id/text_part_number_or_karban_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editview_height"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+            <EditText
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:hint="Part Name*"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="@dimen/editview_height"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:id="@+id/ed_partname"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+            <EditText
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:hint="Supplier Code*"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="@dimen/editview_height"
+                    android:gravity="center_vertical"
+                    android:id="@+id/ed_supplier_code"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+            <EditText
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:hint="Supplier Name*"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:layout_height="@dimen/editview_height"
+                    android:gravity="center_vertical"
+                    android:id="@+id/ed_supplier_name"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:hint="Karban Number*"
+                        android:layout_width="match_parent"
+                        android:inputType="text"
+                        android:enabled="false"
+                        android:layout_height="@dimen/editview_height"
+                        android:gravity="center_vertical"
+                        android:id="@+id/ed_karban_number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                        android:hint="Reporting Badge Number*"
+                        android:id="@+id/ed_reporting_badge_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editview_height"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:hint="Reporting Associate*"
+                        android:enabled="false"
+                        android:layout_width="match_parent"
+                        android:inputType="text"
+                        android:layout_height="@dimen/editview_height"
+                        android:gravity="center_vertical"
+                        android:id="@+id/ed_reporting_associate"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:helperText="Cost code">
+
+                <Spinner
+                        android:hint="Cost Code*"
+                        android:id="@+id/spinner_cost_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editview_height"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:hint="Quantity*"
+                        android:layout_width="match_parent"
+                        android:inputType="text"
+                        android:layout_height="@dimen/editview_height"
+                        android:gravity="center_vertical"
+                        android:id="@+id/ed_quatity"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:hint="Reject Code"
+                        android:layout_width="match_parent"
+                        android:inputType="text"
+                        android:layout_height="@dimen/editview_height"
+                        android:gravity="center_vertical"
+                        android:id="@+id/ed_reject_code"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:hint="Sequence Number"
+                        android:layout_width="match_parent"
+                        android:inputType="text"
+                        android:layout_height="@dimen/editview_height"
+                        android:gravity="center_vertical"
+                        android:id="@+id/ed_sequence_number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:helperText="Section*"
+                    android:hint="Section*">
+                <Spinner
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_width="match_parent"
+                        android:inputType="text"
+                        android:hint="Section*"
+                        android:layout_height="@dimen/editview_height"
+                        android:gravity="center_vertical"
+                        android:id="@+id/spinner_section"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:helperText="Defect Cause*"
+                    android:hint="Defect Cause*">
+                <Spinner
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_width="match_parent"
+                        android:inputType="text"
+                        android:layout_height="@dimen/editview_height"
+                        android:gravity="center_vertical"
+                        android:id="@+id/spinner_defect_cause"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:helperText="Type of Defect*"
+                    android:hint="Type of Defect*">
+                <Spinner
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_width="match_parent"
+                        android:inputType="text"
+                        android:layout_height="@dimen/editview_height"
+                        android:gravity="center_vertical"
+                        android:id="@+id/spinner_type_of_defect"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:hint="Defect Description"
+                        android:layout_width="match_parent"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:layout_height="@dimen/editview_height"
+                        android:gravity="center_vertical"
+                        android:id="@+id/ed_defect_description"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <RadioGroup
+                    android:id="@+id/radio_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                <RadioButton
+                        android:text="Line A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_line_a"
+                        android:tag="A"
+                        android:layout_weight="1"/>
+
+                <RadioButton
+                        android:text="Line B"
+                        android:tag="B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_line_b"
+                        android:layout_weight="1"/>
+            </RadioGroup>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:helperText="Group Association">
+
+                <Spinner
+                        android:hint="Group Association"
+                        android:id="@+id/spinner_charge_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editview_height"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:helperText="Attach Photo"
+                    android:hint="Attach Photo">
+
+                <ImageView
+                        android:id="@+id/img_attach_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:background="@drawable/attach_icon" />
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_attach_photos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="Create Ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_create_ticket"
+                    android:layout_weight="1"
+                    />
+
+            <Button
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="Process Ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_process_ticket"
+                    android:layout_weight="1"
+                    />
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:indeterminateTintMode="multiply"
+            android:indeterminateTint="@color/dark_blue"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

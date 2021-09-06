@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.velmurugan.androidanimationexample.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_containerTransformFragment"
+            app:destination="@id/containerTransformFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/containerTransformFragment"
+        android:name="com.velmurugan.androidanimationexample.containertransform.ContainerTransformFragment"
+        android:label="ContainerTransformFragment"
+        tools:layout="@layout/fragment_container_transform">
+        <action
+            android:id="@+id/action_containerTransformFragment_to_containerTransform1Fragment"
+            app:destination="@id/containerTransform1Fragment">
+        </action>
+        <action
+            android:id="@+id/action_containerTransformFragment_to_createNewFragment"
+            app:destination="@id/createNewFragment" />
+        <action
+            android:id="@+id/action_containerTransformFragment_to_searchViewFragment"
+            app:destination="@id/searchViewFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/containerTransform1Fragment"
+        android:name="com.velmurugan.androidanimationexample.containertransform.ContainerTransform1Fragment"
+        android:label="ContainerTransform1Fragment"
+        tools:layout="@layout/fragment_container_transform1">
+        <argument android:name="movie" app:argType="com.velmurugan.androidanimationexample.Movie" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewFragment"
+        android:name="com.velmurugan.androidanimationexample.containertransform.CreateNewFragment"
+        android:label="CreateNewFragment" />
+    <fragment
+        android:id="@+id/searchViewFragment"
+        android:name="com.velmurugan.androidanimationexample.containertransform.SearchViewFragment"
+        android:label="SearchViewFragment" />
+</navigation>

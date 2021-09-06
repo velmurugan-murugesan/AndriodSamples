@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingBottom="40dp">
+
+    <TextView
+            android:id="@+id/textView2"
+            style="@style/TextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/upload_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+            android:id="@+id/img_folder"
+            android:layout_width="135dp"
+            android:layout_height="@dimen/menu_icon_height"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/img_camera"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:srcCompat="@drawable/folder_icon" />
+
+    <TextView
+            android:id="@+id/text_folder"
+            style="@style/TextNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/folder"
+            android:textColor="@color/grey"
+            app:layout_constraintEnd_toEndOf="@+id/img_folder"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/img_folder"
+            app:layout_constraintTop_toBottomOf="@+id/img_folder" />
+
+    <ImageView
+            android:id="@+id/img_camera"
+            android:layout_width="136dp"
+            android:layout_height="@dimen/menu_icon_height"
+            app:layout_constraintStart_toEndOf="@+id/img_folder"
+            app:layout_constraintTop_toTopOf="@+id/img_folder"
+            app:srcCompat="@drawable/camera" />
+
+    <TextView
+            android:id="@+id/text_camera"
+            style="@style/TextNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/camera"
+            android:textColor="@color/grey"
+            app:layout_constraintEnd_toEndOf="@+id/img_camera"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/text_folder"
+            app:layout_constraintStart_toStartOf="@+id/img_camera"
+            app:layout_constraintTop_toBottomOf="@+id/img_camera" />
+
+    <ImageView
+            android:id="@+id/img_gallery"
+            android:layout_width="136dp"
+            android:padding="10dp"
+            android:layout_height="@dimen/menu_icon_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/img_camera"
+            app:layout_constraintTop_toTopOf="@+id/img_folder"
+            app:srcCompat="@drawable/upload" />
+
+    <TextView
+            android:id="@+id/text_gallery"
+            style="@style/TextNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uploaded_images"
+            android:textColor="@color/grey"
+            app:layout_constraintEnd_toEndOf="@+id/img_gallery"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/img_gallery"
+            app:layout_constraintTop_toBottomOf="@+id/img_gallery" />
+</androidx.constraintlayout.widget.ConstraintLayout>

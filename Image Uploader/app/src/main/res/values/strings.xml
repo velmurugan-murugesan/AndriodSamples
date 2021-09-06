@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Image Uploader</string>
+    <string name="hero_transition_name">hero_image</string>
+    <string name="login">LOGIN</string>
+    <string name="password">PASSWORD</string>
+    <string name="username">USERNAME</string>
+    <string name="error_invalid_password">Invalid Password</string>
+    <string name="error_invalid_username">Invalid Username</string>
+    <string name="lato_bold">lato_bold.ttf</string>
+    <string name="transition_logo">transition_logo</string>
+    <string name="comments">Comments</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="upload">Upload</string>
+    <string name="scrap_image_uploader">Scrap Image Uploader</string>
+    <string name="invalid_login_credentials">Invalid Login Credentials</string>
+    <string name="please_upload_files">Please upload Files</string>
+    <string name="please_add_comments">Please add some comments</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="folder">Folder</string>
+    <string name="camera">Camera</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="upload_success">Upload successful</string>
+    <string name="ticket_success">Ticket Created Successfully</string>
+    <string name="uploader_images">Uploaded Images</string>
+    <string name="part_number_or_karban_number">Part Number Or Karban Number*</string>
+    <string name="view_gallery">view gallery</string>
+    <string name="search">Search</string>
+    <string name="provide_permission">Please provide permissions</string>
+    <string name="provide_comment">Please Provide Comments</string>
+    <string name="file_path_error">Photo file can\'t be created, please try again</string>
+    <string name="upload_filed">File Uploaded Failed</string>
+    <string name="file_path_failed">Failed to fatch filepath</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="create_ticket">Create Ticket</string>
+    <string name="uploaded_images">Uploaded Images</string>
+
+</resources>

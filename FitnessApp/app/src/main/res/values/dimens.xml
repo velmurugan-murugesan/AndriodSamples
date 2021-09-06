@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="space_small">8dp</dimen>
+    <dimen name="space_medium">16dp</dimen>
+    <dimen name="space_large">24dp</dimen>
+
+    <dimen name="view_height_xsmall">40dp</dimen>
+    <dimen name="view_height_small">50dp</dimen>
+    <dimen name="view_height">60dp</dimen>
+    <dimen name="view_height_large">80dp</dimen>
+    <dimen name="view_height_xxlarge">130dp</dimen>
+
+</resources>

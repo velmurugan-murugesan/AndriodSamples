@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/viewContainerTransformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View - Container Transform "/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragmentContainerTransformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment - Container Transform "/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/viewSharedAxisTransformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View - Shared Axis Transform"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragmentSharedAxisTransformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment - Shared Axis Transform"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/viewFadeThroughTransformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View - Fade Through Transform"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragmentFadeThroughTransformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment - Fade Through Transform"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/viewFadeTransformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View - Fade Transform"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragmentFadeTransformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment - Fade Transform"/>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentOne">
+
+    <fragment
+        tools:layout="@layout/fragment_1"
+        android:id="@+id/fragmentOne"
+        android:name="com.example.navigationcomponentexample.FragmentOne"
+        android:label="FragmentOne" >
+
+        <action
+            android:id="@+id/action_fragmentOne_to_fragmentTwo"
+            app:destination="@id/fragmentTwo" >
+
+
+        </action>
+        <action
+            android:id="@+id/action_fragmentOne_to_fragmentFour"
+            app:destination="@id/fragmentFour" />
+    </fragment>
+
+    <fragment
+        tools:layout="@layout/fragment_2"
+        android:id="@+id/fragmentTwo"
+        android:name="com.example.navigationcomponentexample.FragmentTwo"
+        android:label="FragmentTwo" >
+
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue="def"
+            />
+        <action
+            android:id="@+id/action_fragmentTwo_to_fragmentThree"
+            app:destination="@id/fragmentThree" />
+    </fragment>
+
+    <fragment
+        tools:layout="@layout/fragment_3"
+        android:id="@+id/fragmentThree"
+        android:name="com.example.navigationcomponentexample.FragmentThree"
+        android:label="FragmentThree" >
+        <action
+            app:popUpTo="@id/fragmentOne"
+            android:id="@+id/action_fragmentThree_to_fragmentOne" />
+    </fragment>
+
+
+    <fragment
+        tools:layout="@layout/fragment_4"
+        android:id="@+id/fragmentFour"
+        android:name="com.example.navigationcomponentexample.FragmentFour"
+        android:label="FragmentFour" >
+
+        <action
+            app:destination="@id/fragmentTwo"
+            android:id="@+id/action_fragmentFour_to_fragmentTwo"
+            app:popUpTo="@id/fragmentOne"/>
+    </fragment>
+</navigation>

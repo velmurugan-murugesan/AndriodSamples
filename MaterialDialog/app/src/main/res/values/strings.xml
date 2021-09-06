@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Material Dialog</string>
+    <string name="title">Are you sure to accept this offer</string>
+    <string name="supporting_text">This is offer from the company xyz for the position of senior developer</string>
+    <string name="cancel">Cancel</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="title_simple_dialog">Please select your favorite city</string>
+</resources>

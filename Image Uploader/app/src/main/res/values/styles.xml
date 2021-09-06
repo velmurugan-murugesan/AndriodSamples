@@ -1,0 +1,142 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/color_actionbar</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/grey_dark</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/grey_dark</item>
+    </style>
+
+
+    <!-- Styleables-->
+    <declare-styleable name="AppTextView">
+        <attr name="font_name" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="AppToolbar">
+        <attr name="title" format="string"/>
+        <attr name="right_icon_visible" format="boolean"/>
+        <attr name="left_icon_visible" format="boolean"/>
+        <attr name="background_color" format="reference"/>
+        <attr name="right_icon_background" format="reference"/>
+        <attr name="left_icon_background" format="reference"/>
+
+    </declare-styleable>
+
+    <!-- Text styles-->
+    <style name="TextNormal" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <!-- Text styles-->
+    <style name="TextSmall" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="EditLogin" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/grey_dark</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textColorHint">@color/grey</item>
+    </style>
+    <style name="EditNormal" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@drawable/ed_background_normal</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+
+    <style name="TextTitle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="ButtonNormalMaterial" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="strokeColor">@color/white</item>
+    </style>
+    <style name="ButtonNormalMaterialProceed" parent="@style/Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="strokeColor">@color/white</item>
+    </style>
+    <style name="ButtonNormal">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#FFCC00</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:background">#5fa3d0</item>
+    </style>
+
+    <style name="TextTitleStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+    </style>
+
+    <style name="TextDescStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@android:color/background_dark</item>
+    </style>
+
+    <style name="ButtonStyle" parent="TextTitleStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextLabel" parent="Widget.Design.TextInputLayout">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/dark_blue</item>
+        <item name="android:textSize">20sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/text_color</item>
+        <item name="colorControlActivated">@color/grey_dark</item>
+    </style>
+
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">#e91e63</item>
+        <item name="android:colorForeground">#33691e</item>
+        <item name="colorControlNormal">#f57f17</item>
+        <item name="android:textColorSecondary">#673ab7</item>
+    </style>
+
+</resources>

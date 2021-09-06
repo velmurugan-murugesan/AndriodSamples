@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidAnimationExample</string>
+    <string name="email_card_detail_transition_name">email_card_detail</string>
+
+</resources>

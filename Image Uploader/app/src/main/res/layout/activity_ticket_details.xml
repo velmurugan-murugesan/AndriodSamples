@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.imageuploader.widgets.AppToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Basic Details - "
+            app:right_icon_visible="false"
+            app:left_icon_visible="true"
+            app:left_icon_background="@drawable/back_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+    </com.imageuploader.widgets.AppToolbar>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="@dimen/menu_icon_height"
+                    android:layout_height="@dimen/menu_icon_height"
+                    android:id="@+id/img_menu_icon"
+                    android:background="@drawable/ic_account_circle_black_24dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                    android:layout_marginLeft="8dp"/>
+
+            <TextView
+                    android:text="Assigned To : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_assign_to"
+                    style="@style/TextTitle"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="@+id/img_menu_icon"
+                    app:layout_constraintStart_toEndOf="@+id/img_menu_icon"
+                    android:layout_marginStart="8dp"/>
+
+            <TextView
+                    style="@style/TextTitle"
+                    android:text="Reporting Associate : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_reporting_associate"
+                    app:layout_constraintTop_toBottomOf="@+id/text_assign_to"
+                    app:layout_constraintStart_toStartOf="@+id/text_assign_to"
+                    android:layout_marginTop="8dp"/>
+
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/assigned_to"
+                    app:layout_constraintTop_toTopOf="@+id/text_assign_to"
+                    app:layout_constraintStart_toEndOf="@+id/text_assign_to"
+                    android:layout_marginStart="8dp"/>
+
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reporting_associate"
+                    app:layout_constraintTop_toTopOf="@+id/text_reporting_associate"
+                    app:layout_constraintStart_toEndOf="@+id/text_reporting_associate"
+                    android:layout_marginStart="8dp"/>
+
+
+            <View
+                    android:background="@color/green_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintTop_toBottomOf="@id/img_menu_icon"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="8dp"
+                    app:layout_constraintBottom_toTopOf="@id/text_date_created"
+                    android:id="@+id/view2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintVertical_bias="1.0"
+                    android:layout_marginBottom="8dp"/>
+
+            <TextView
+                    style="@style/TextTitle"
+                    android:text="Type Of Defect : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_type_of_defect"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="@+id/view2"
+                    app:layout_constraintStart_toStartOf="@+id/view2"
+                    android:layout_marginStart="8dp"/>
+
+            <TextView
+                    style="@style/TextTitle"
+                    android:text="Defect Cause : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_defect_cause"
+                    app:layout_constraintTop_toBottomOf="@+id/text_type_of_defect"
+                    app:layout_constraintStart_toStartOf="@+id/text_type_of_defect"
+                    android:layout_marginTop="8dp"/>
+
+            <TextView
+                    style="@style/TextTitle"
+                    android:text="Defect Description : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_defect_description"
+                    app:layout_constraintTop_toBottomOf="@+id/text_defect_cause"
+                    app:layout_constraintStart_toStartOf="@+id/text_type_of_defect"
+                    android:layout_marginTop="8dp"/>
+
+            <TextView
+                    style="@style/TextTitle"
+                    android:text="Date Created : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_date_created"
+                    app:layout_constraintTop_toBottomOf="@+id/text_defect_description"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="@+id/text_defect_description"
+                    />
+
+
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date_created"
+                    app:layout_constraintTop_toTopOf="@+id/text_date_created"
+                    app:layout_constraintStart_toEndOf="@+id/text_date_created"
+                    android:layout_marginStart="8dp"/>
+
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/type_of_defect"
+                    app:layout_constraintTop_toTopOf="@+id/text_type_of_defect"
+                    app:layout_constraintStart_toEndOf="@+id/text_type_of_defect"
+                    android:layout_marginStart="8dp"/>
+
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/defect_cause"
+                    app:layout_constraintStart_toEndOf="@+id/text_defect_cause"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintTop_toTopOf="@+id/text_defect_cause"/>
+
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:id="@+id/defect_description"
+                    app:layout_constraintTop_toTopOf="@+id/text_defect_description"
+                    app:layout_constraintStart_toEndOf="@+id/text_defect_description"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/view2"
+                    android:layout_marginEnd="8dp"/>
+
+            <TextView
+                    style="@style/TextTitle"
+                    android:text="Part Number : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_part_number"
+                    app:layout_constraintTop_toBottomOf="@+id/text_date_created"
+                    app:layout_constraintStart_toStartOf="@+id/text_date_created"
+                    android:layout_marginTop="8dp"/>
+
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/part_number"
+                    app:layout_constraintTop_toTopOf="@+id/text_part_number"
+                    app:layout_constraintStart_toEndOf="@+id/text_part_number"
+                    android:layout_marginStart="8dp"/>
+            <TextView
+                    style="@style/TextTitle"
+                    android:text="Part Name : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_part_name"
+                    app:layout_constraintTop_toBottomOf="@+id/text_part_number"
+                    app:layout_constraintStart_toStartOf="@+id/text_part_number"
+                    android:layout_marginTop="8dp"/>
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/part_name"
+                    app:layout_constraintTop_toTopOf="@+id/text_part_name"
+                    app:layout_constraintStart_toEndOf="@+id/text_part_name"
+                    android:layout_marginStart="8dp"/>
+
+            <TextView
+                    style="@style/TextTitle"
+                    android:text="Kanban Number : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_kanban_number"
+                    app:layout_constraintTop_toBottomOf="@+id/text_part_name"
+                    app:layout_constraintStart_toStartOf="@+id/text_part_name"
+                    android:layout_marginTop="8dp"/>
+
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kanban_number"
+                    app:layout_constraintTop_toTopOf="@+id/text_kanban_number"
+                    app:layout_constraintStart_toEndOf="@+id/text_kanban_number"
+                    android:layout_marginStart="8dp"/>
+
+
+            <TextView
+                    style="@style/TextTitle"
+                    android:text="Section : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_section"
+                    app:layout_constraintTop_toBottomOf="@+id/text_kanban_number"
+                    app:layout_constraintStart_toStartOf="@+id/text_kanban_number"
+                    android:layout_marginTop="8dp"/>
+
+
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/section"
+                    app:layout_constraintTop_toTopOf="@+id/text_section"
+                    app:layout_constraintStart_toEndOf="@+id/text_section"
+                    android:layout_marginStart="8dp"/>
+
+            <TextView
+                    style="@style/TextTitle"
+                    android:text="Supplier Code : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_supplier_code"
+                    app:layout_constraintTop_toBottomOf="@+id/text_section"
+                    app:layout_constraintStart_toStartOf="@+id/text_kanban_number"
+                    android:layout_marginTop="8dp"/>
+
+
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/supplier_code"
+                    app:layout_constraintTop_toTopOf="@+id/text_supplier_code"
+                    app:layout_constraintStart_toEndOf="@+id/text_supplier_code"
+                    android:layout_marginStart="8dp"/>
+
+
+            <TextView
+                    style="@style/TextTitle"
+                    android:text="Supplier Name : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_supplier_name"
+                    app:layout_constraintTop_toBottomOf="@+id/text_supplier_code"
+                    app:layout_constraintStart_toStartOf="@+id/text_kanban_number"
+                    android:layout_marginTop="8dp"/>
+
+
+            <TextView
+                    android:id="@+id/supplier_name"
+                    style="@style/TextNormal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:lines="2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/text_supplier_name"
+                    app:layout_constraintTop_toTopOf="@+id/text_supplier_name" />
+
+
+            <TextView
+                    android:id="@+id/text_cost_code"
+                    style="@style/TextTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cost code : "
+                    app:layout_constraintStart_toStartOf="@+id/text_kanban_number"
+                    app:layout_constraintTop_toBottomOf="@+id/supplier_name" />
+
+
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cost_code"
+                    app:layout_constraintStart_toEndOf="@+id/text_cost_code"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintTop_toTopOf="@+id/text_cost_code"/>
+
+            <TextView
+                    style="@style/TextTitle"
+                    android:text="Line code : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_line_code"
+                    app:layout_constraintTop_toBottomOf="@+id/text_cost_code"
+                    app:layout_constraintStart_toStartOf="@+id/text_kanban_number"
+                    android:layout_marginTop="8dp"
+                    />
+
+
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/line_code"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintTop_toTopOf="@+id/text_line_code"
+                    app:layout_constraintStart_toEndOf="@+id/text_line_code"
+                    android:layout_marginStart="8dp"/>
+
+            <TextView
+                    style="@style/TextTitle"
+                    android:text="Sequence Number : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_sequence_number"
+                    app:layout_constraintTop_toBottomOf="@+id/text_line_code"
+                    app:layout_constraintStart_toStartOf="@+id/text_kanban_number"
+                    android:layout_marginTop="8dp"
+                    />
+
+
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sequence_number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintTop_toTopOf="@+id/text_sequence_number"
+                    app:layout_constraintStart_toEndOf="@+id/text_sequence_number"
+                    android:layout_marginStart="8dp"/>
+
+            <TextView
+                    style="@style/TextTitle"
+                    android:text="Quality : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_quality"
+                    app:layout_constraintTop_toBottomOf="@+id/text_sequence_number"
+                    app:layout_constraintStart_toStartOf="@+id/text_kanban_number"
+                    android:layout_marginTop="8dp"/>
+
+            <TextView
+                    style="@style/TextNormal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/quality"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintTop_toTopOf="@+id/text_quality"
+                    app:layout_constraintStart_toEndOf="@+id/text_quality"
+                    android:layout_marginStart="8dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/quality"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+            <ProgressBar
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar"
+                    android:visibility="gone"
+                    android:indeterminateTintMode="multiply"
+                    android:indeterminateTint="@color/dark_blue"
+                    android:progressDrawable="@drawable/circular_progress_bar"
+                    android:layout_alignParentBottom="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

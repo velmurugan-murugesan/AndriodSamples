@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/alert_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/ic_info_black_24dp"/>
+
+    <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Title"/>
+
+    <TextView
+            android:id="@+id/tv_desc"
+            style="@style/TextDescStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"/>
+
+    <LinearLayout
+            android:id="@+id/layout_two_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/btn_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/ButtonStyle"
+                android:text="@string/cancel"
+                android:background="@drawable/button_background"
+                android:layout_margin="5dp"
+                android:layout_weight="1"/>
+
+        <Button
+                android:id="@+id/btn_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/ButtonStyle"
+                android:text="@string/ok"
+                android:background="@drawable/button_background"
+                android:layout_margin="5dp"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/layout_one_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/btn_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_background"
+                style="@style/ButtonStyle"
+                android:text="@string/ok"/>
+
+    </LinearLayout>
+</LinearLayout>

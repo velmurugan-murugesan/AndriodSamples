@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.velmurugan.materialmotionanimationexample.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_homeDetailFragment"
+            app:destination="@id/homeDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addNewFragment"
+            app:destination="@id/addNewFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeDetailFragment"
+        android:name="com.velmurugan.materialmotionanimationexample.HomeDetailFragment"
+        android:label="HomeDetailFragment" >
+        <argument android:name="movie" app:argType="com.velmurugan.materialmotionanimationexample.Movie" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewFragment"
+        android:name="com.velmurugan.materialmotionanimationexample.AddNewFragment"
+        android:label="AddNewFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.velmurugan.materialmotionanimationexample.SearchFragment"
+        android:label="SearchFragment" />
+</navigation>

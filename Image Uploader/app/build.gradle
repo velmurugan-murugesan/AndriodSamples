@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.example.mytestapp"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+
+        Properties appProperties = new Properties()
+        appProperties.load(new FileInputStream(file('app.properties')))
+
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_URL", appProperties['INTERNAL_PROD_URL']
+        }
+
+        debug {
+            debuggable true
+            buildConfigField "String", "BASE_URL", appProperties['INTERNAL_DEBUG_URL']
+        }
+
+        staging {
+            applicationIdSuffix ".test"
+            buildConfigField "String", "BASE_URL", appProperties['INTERNAL_DEBUG_URL']
+            debuggable true
+        }
+
+
+    }
+    flavorDi    mensions "version"
+
+    productFlavors {
+
+        dev {
+            dimension "version"
+        }
+
+        prod {
+            dimension "version"
+        }
+
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation deps.kotlin_stdlib
+    implementation deps.appcompat
+    implementation deps.constraintlayout
+    testImplementation deps.junit
+    androidTestImplementation deps.testRunner
+    androidTestImplementation deps.espresso
+    implementation(deps.retrofit) {
+        exclude module: 'okhttp'
+    }
+    implementation deps.gson
+    implementation deps.converter_gson
+    implementation deps.logging_interceptor
+    implementation deps.okhttp
+    implementation deps.glide
+    implementation deps.recyclerview
+    implementation deps.cardview
+    implementation deps.adapter_rxjava2
+    implementation deps.rxandroid
+    implementation deps.material
+    implementation deps.lifecycle_extensions
+    annotationProcessor deps.lifecycle_compiler
+    implementation 'com.android.support:multidex:1.0.3'
+
+}

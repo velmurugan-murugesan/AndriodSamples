@@ -5,5 +5,4 @@ import javax.inject.Inject
 
 class MovieRepositoryImpl @Inject constructor(val apiClient: ApiClient) : MovieRepository {
     override suspend fun getAllMovies() = apiClient.getAllMovies()
-
 }

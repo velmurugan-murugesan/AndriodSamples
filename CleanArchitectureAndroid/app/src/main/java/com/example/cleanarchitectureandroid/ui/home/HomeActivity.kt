@@ -22,54 +22,42 @@ import kotlinx.android.synthetic.main.activity_home.*
 import javax.inject.Inject
 
 class HomeActivity : DaggerAppCompatActivity() {
-
     lateinit var homeViewModel: HomeViewModel
-
-    @Inject lateinit var viewModelFactory: ViewModelProvider.Factory
+    @Inject
+    lateinit var viewModelFactory: ViewModelProvider.Factory
     lateinit var movieAdapter: MovieAdapter
-
     lateinit var binding: ActivityHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = DataBindingUtil.setContentView(this, R.layout.activity_home)
-
         binding.lifecycleOwner = this
-
         movieAdapter = MovieAdapter()
-
         binding.recyclerviewMovies.adapter = movieAdapter
-
-        homeViewModel = ViewModelProviders.of(this,viewModelFactory).get(HomeViewModel::class.java)
-
-
-        movieAdapter.setMovieClickListener(object : ClickListener<Movie>{
-            override fun onCLick(data: Movie) {
-                startActivity(Intent(this@HomeActivity, DetailActivity::class.java))
-            }
-
-        })
-
-        homeViewModel.getAllMovies().observe(this, Observer {
-            it?.let {
-                when (it.status) {
-
-                    Status.SUCCESS -> {
-                        movieAdapter.setMovies(it.data!!)
-                    }
-
-                    Status.ERROR -> {
-                        Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
-                    }
-
-                }
-            }
-        })
-
+        homeViewModel = ViewModelProviders.of(this, viewModelFactory).get(HomeViewModel::class.java)
+        movieAdapter.setMovieClickListener(movieItemClickListener)
+        homeViewModel.getAllMovies().observe(this, ::allMovieResponse)
         homeViewModel.fetchAllMovies()
-
     }
 
+    private val movieItemClickListener = object : ClickListener<Movie> {
+        override fun onCLick(data: Movie) {
+            startActivity(Intent(this@HomeActivity, DetailActivity::class.java))
+        }
+    }
 
+    private fun allMovieResponse(resource: Resource<List<Movie>>) {
+        when (resource.status) {
+            Status.SUCCESS -> {
+                resource.data?.let {
+                    movieAdapter.setMovies(it)
+                }
+            }
+            Status.ERROR -> {
+                Toast.makeText(this, resource.message, Toast.LENGTH_SHORT).show()
+            }
+            else -> {
+            }
+        }
+    }
 }

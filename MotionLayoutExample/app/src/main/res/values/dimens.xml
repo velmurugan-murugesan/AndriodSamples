@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="space_small">@dimen/_8sdp</dimen>
+    <dimen name="space_medium">@dimen/_16sdp</dimen>
+    <dimen name="space_large">@dimen/_24sdp</dimen>
+    <dimen name="space_xlarge">@dimen/_32sdp</dimen>
+
+
+    <!--view-->
+    <dimen name="view_height_xsmall">@dimen/_30sdp</dimen>
+    <dimen name="view_height_small">@dimen/_30sdp</dimen>
+    <dimen name="view_height">@dimen/_60sdp</dimen>
+    <dimen name="view_height_input">90dp</dimen>
+    <dimen name="view_height_medium">120dp</dimen>
+    <dimen name="view_height_large">160dp</dimen>
+    <dimen name="view_height_xlarge">240dp</dimen>
+
+</resources>
