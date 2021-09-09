@@ -48,16 +48,11 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MovieList(movieList: List<Movie>) {
-    var selectedIndex by remember { mutableStateOf(-1) }
     LazyColumn {
-
         itemsIndexed(items = movieList) { index, item ->
-            MovieItem(movie = item, index, selectedIndex) { i ->
-                selectedIndex = i
-            }
+            MovieItem(movie = item)
         }
     }
-
 }
 
 @Preview(showBackground = true)
@@ -70,25 +65,19 @@ fun MovieItem() {
         "Latest"
     )
 
-    MovieItem(movie = movie, 0, 0) { i ->
-
-    }
+    MovieItem(movie = movie)
 }
 
 
 @Composable
-fun MovieItem(movie: Movie, index: Int, selectedIndex: Int, onClick: (Int) -> Unit) {
-
-    val backgroundColor =
-        if (index == selectedIndex) MaterialTheme.colors.primary else MaterialTheme.colors.background
+fun MovieItem(movie: Movie) {
     Card(
         modifier = Modifier
             .padding(8.dp, 4.dp)
             .fillMaxWidth()
-            .clickable { onClick(index) }
             .height(110.dp), shape = RoundedCornerShape(8.dp), elevation = 4.dp
     ) {
-        Surface(color = backgroundColor) {
+        Surface() {
 
             Row(
                 Modifier
