@@ -1,0 +1,46 @@
+type: edu
+custom_name: Rename on import
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 57
+    placeholder_text: |-
+      // import kotlin.random.Random
+      // import java.util.Random
+    initial_state:
+      length: 57
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: XLfQHDrZk3yumfHI/vGO6hWCwiqb9JCDiqkolkAnuavxB6XXKpj1kG3dr3r5b1LdzP7I5/7T/7BL2e/D1jyPH6+RH26+eTwTTwdlnzwbwUQ=
+  - offset: 144
+    length: 23
+    placeholder_text: // KRandom.nextInt(2) +
+    initial_state:
+      length: 23
+      offset: 144
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: dCtsHja6zwh9LXGeXLBkvINEB++thF7UfQugTApenIM=
+  - offset: 210
+    length: 25
+    placeholder_text: // JRandom().nextInt(2) +
+    initial_state:
+      length: 25
+      offset: 210
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: h7trXOOaCQBPofPldDIq1y7vv9AMVPAOEwyyPx+CN5k=
+  encrypted_text: WctWmiwRwZtvxh709eeca8DurP0MauTDA5AY0C7zFMJilWlaDNCqI37QyrYNRoAJwTmf/6wv9dRqjtfxNsrCv7API/GwL5TtXSgS4FBRO6yEA5jsSMTxcFdxjYeJy3urfxUd693LKx1IyRyS0/9TkGOGlmHtM5CbM+yuXUFWWIx5MaSKvlFY949mG1l1uFVSiadkKbYHJXHVqCGDkIXybc18ZkLk/WpfB87Cr7P7nO0Q9ZjTnrR4usmFArgTBXORJXG8XjDpJjEEt8wh38ckZELXTV7dB7tVWRxFN/sTL0qyf36M3tCQ1cpJVJOPyLB7lB4TcLwowmGoYwRu0AMD5A==
+  learner_created: false
+- name: test/Tests.kt
+  visible: false
+  encrypted_text: ITs8Nv8EH6QWJG5nufD7nCbrLPoZNTYAX8EbQHppKy+TR7uFhZF7JnSL5/nnFJttOoUbKzjzjKMy0T1IKOzzSDoOeK+zndv76BFBSLtHZcP/e3MqAcGDqQYN16YRpOVVUA0ugQ7JGDGUHaHhyAV0zNRKhx1z5vy0Wr4S/XHBENlltd+QyrRIeqykVLGfHaw4dpMUDwDGzSGyw1g4DKr3Sv77xywtegVn/DnY8iTf3Gx/swNKZgqwAP/XGclWw5MCFuSYZa+l+IL1JvrVlBLo/zQg7bdZmH96kp4ECnQQ2KwIH8CuOuJhSaBPR5OrpNjSUUZeVgmA0HfzhmwUmDmUMVkL0ixK+WzQHgV79+gqRi6yF3DEkxWL6ewzNBTqEuuOTW30qxZN6PtaxVMDwzPg3MiteSKh1x4dB7N9nS9Mi4u02qbSlmlPYm9ifa+UtNre
+  learner_created: false
+status: Unchecked
+record: -1

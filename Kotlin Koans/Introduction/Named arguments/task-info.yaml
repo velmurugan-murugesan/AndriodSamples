@@ -1,0 +1,27 @@
+type: edu
+custom_name: Named arguments
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 76
+    length: 12
+    placeholder_text: TODO()
+    initial_state:
+      length: 6
+      offset: 76
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: iGQKKJZoH+UNaYiGQ8JQ56oKMv6QwvDMwOvuVI5Xn7M=
+  encrypted_text: KZiCpkBiEpVQfSaEHjuhuIc2rjJ6rso0u5LY8p2BgxriB7KVu8rNjsKwVnLA3/mb0Adqb6xaz6aL8CDKc3hPvm4hFXl3BBe07bs7hLAgtX1XYPcuOWEgSoKRnzttUE0e
+  learner_created: false
+- name: test/tests.kt
+  visible: false
+  encrypted_text: 5HHOO3G5Bd1EqENAPgW37aypefbBlKlNFUCfpB72cYMzIemACi4vU4xGOvaseGpCjbnPj/UgVOfCocZQ+uQpwrd57PwV7XszpPBQqM6ZRFCuPHGj9X+aCbZqPUoXWHMQeBeKdkLOnWaHvTEpSt/Ci7mDFZRjiLwgf1P86LCsaDNcGdy7Aol6c3trQYm5Om/JAZBQwRCCuqdoUXQQXmiq5mQwppYpwEaqB04vEY9n7XGVI9yFi7hX3CstfzINyHg9yNLr5IT4KDvSX8F8Es7+YZzaKs5ddwMg1Nf0dOWMDhnj/ZLjO0ja1wRUTHhQKDHD1rQd6IL4X3ONHA2VkO/RrzmXm3brTNasC+vWpqVGHaRE5RiSy4HiqVFOprkQ+cbqjwq4/xH8IHl5Iz7Re5F2/A==
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 15 Sep 2021 07:27:10 UTC
+record: -1

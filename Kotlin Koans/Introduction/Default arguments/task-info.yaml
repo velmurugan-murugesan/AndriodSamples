@@ -1,0 +1,27 @@
+type: edu
+custom_name: Default arguments
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 69
+    placeholder_text: 'fun foo(name: String, number: Int, toUpperCase: Boolean)'
+    initial_state:
+      length: 56
+      offset: 0
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: MRwS31RmyW+ztCjOEv1WrKfkEfmnQfv14f0m0SLyqjATj5QfxykHrose7HHS6fot6HBTz5xBtoWsYj0wkJavsHgDFCv4EtwzYopXO9uov6M=
+  encrypted_text: MRwS31RmyW+ztCjOEv1WrKfkEfmnQfv14f0m0SLyqjDryd0wNEvuM/PkztFB0G0TZ0za1DXMfSfmO8j5WCwQsvsyp1fF2Ty51dQATCcEHFCJNAhVq///fVX1bsIgSoUAlBtgZhj6RxGty/mNw39HhrPMJnNFqO+fcF2gZ8xTEelsX+3sHjECEOs4QMJt9AVLbcl1Nsy9hYksEPXn5ZcJn4a9lFQsp5Nus6c+foIJP9OiS0sdsAk2dtHn2nyOw2yP9l4FUE+tgG465wyGauR8nan0I3bSUiy4d9awHriTcaqNSeyy+1AQpvlBTGbqjkD5jq7gtPLfbu2hQ/kUAkProh7cCOtxP8IzbluEor4O9lITaC4GQhDr7mhcsv+8dutB+9TrDaj4hrWvK5mCasOA6g==
+  learner_created: false
+- name: test/tests.kt
+  visible: false
+  encrypted_text: ITs8Nv8EH6QWJG5nufD7nKf4miLa5dzLLS2XlTof0JGHJM59oG3LTMziX2u9P6j/1I0LDO9+DMkURjzrLzF60gNHa6q2nQY6LGWjIXx80ieelhgcT5LL/g3OnuoOCIkYIqfnI95JuXZ45wdEkMpjYzwHxqiTNoip2BTYoNDhk7axSvlyrTPCVfd2J6QK0lg/xoe0hdJMfDQh39Zah0RxP3dRl9hEa+Qp6ned9hcPIvLm2V8sm3wX+NZqwsEUh33XJXOyNe456v/UXngDGxwscLWwPz4n5AbKApdftsE2XfB+06dW72bP4gVo4jCNrFcTqTDo83YeCVKDkaSw4/9nIMywGyskwKvZ609QeBP1tEKKiS+Ue1qQQhoS39LyOHnL
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 15 Sep 2021 07:29:50 UTC
+record: -1

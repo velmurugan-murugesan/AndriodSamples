@@ -1,0 +1,34 @@
+type: edu
+custom_name: Function literals with receiver
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 66
+    length: 6
+    placeholder_text: TODO()
+    initial_state:
+      length: 6
+      offset: 66
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: lHMCpiaCR4jq30yMpMuesw==
+  - offset: 112
+    length: 6
+    placeholder_text: TODO()
+    initial_state:
+      length: 6
+      offset: 112
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: VKCML8/qxOFVTAVGeCdUyQ==
+  encrypted_text: Ulcr7oA41A7Jclzc6y7irIbgJiuvz5ZuZ/mrTVY9UZ+Nq4Vt1KwWtty1dkya/XOjkL2QgT/TRkykf6vBMzgDg0gx9Nzk/Myz7QKbZfNpblZhgl8o5zXIWKZ4jxKfwzuZqpnPvEJ68uOPd7zPThnvzCxHYyVvknnK8mD1lvudFUM1QdeZTMA1owmODFNAOLrIVKZLF/Y2dph9gDDe7QUaq7qL2ApP1AVZJbnQy/DuNatCECibcIN3lAZui7b4/zaq
+  learner_created: false
+- name: test/tests.kt
+  visible: false
+  encrypted_text: ITs8Nv8EH6QWJG5nufD7nCbrLPoZNTYAX8EbQHppKy+TR7uFhZF7JnSL5/nnFJtttspPQDDPNTQZe+3TX4/piBKJOs1v3rx8fpgS34b2bU+AFlcIn8GvDfeoAjWs8vF7VumyLfIL0abn4YgMRmHmJClfWkVUgUCqgdYKhH3InOXxi+U5UuDZ0CGmDm6UkK3VMr8LNYhS/44OwRcWSDeEsCxdPK5t471D65khgkTxTvhKgs85ZTlmvyKgeCAfgpanwrnbsfUWxw84IVpUMpvmn0iDY1sW2QkJkB1VJxg5PQPkd+2ySyO447rc40DECSounS1b2OYDNBlPl8rjPIGmi1ASuDlOFhpfq2nlCTffj4udsqctRzfK5HpUBYpDX/fp
+  learner_created: false
+status: Unchecked
+record: -1

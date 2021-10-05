@@ -1,0 +1,24 @@
+type: edu
+custom_name: Lambdas
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 82
+    length: 6
+    placeholder_text: TODO()
+    initial_state:
+      length: 6
+      offset: 82
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: 5ZwwLjCo8t6256mPG5/QKg==
+  encrypted_text: c+LVc3DNMdfnt557x5buFwXjL7F7ddkTM5OI0h6gxe/kHzWgwfi2pgBaRNPbHlaQkIPvIStEGtonbyC/uOw+5Jny6na7vMJtxiETyz9CLcH0HJ+2St953VYOcLqzCo8A
+  learner_created: false
+- name: test/tests.kt
+  visible: false
+  encrypted_text: ITs8Nv8EH6QWJG5nufD7nKf4miLa5dzLLS2XlTof0JGHJM59oG3LTMziX2u9P6j/+9nxtv5Sff0q2gK+ujBqrvw/oYWVJMODBCWpq3sVayOhQGZkowt/elQnOc5vaWLqGeOSReOSGtCKB2cTqTOzB/CMyGnaAZ0tV9MI3o+XJ78H2jkcAG8p36OT6K6yPEqoqqKoFltl2sW0ySjy5IKopvPYg4tlllXj894gil6LCW3pVgDnggjyr6rVQah7RCFh4/rtlB0znd3EZOPJf1PQCwqHifCt2iWFkqx9Jm3Zrd9UepWY9Xh0TycX4Wpax+YV8TdyAeC74WEQnvuiV3xj9/i054lPgjXvuVZ0XjWa1BWRSfYYV0NSnaf0EQhfZpnWVb1+Dykkdn560mXFqc+dKQ3cQdo5fwrqulCp1x/Er56MHT1wLYxGmw3B6t0OFYLUCHj8pmWxr9FmATWwERCKwPWpcDNW9S78D6w1yL2oBohwJs7BahEpiqDhyGT/OMNVpVx15+WuKP/yrS6iGaRK32ae7801/0sDEe4t5kJR37pXhY0bCBe3GpWfneyuYWpJlghcYYnoX5pgXrGoIB9ocPOlQGPNUxoh9q3xcjNdozs=
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,24 @@
+type: edu
+custom_name: Comparison
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 97
+    length: 10
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 97
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: gFSQPoAcvKzp2J4garjj87X4mHtrfks5vwtaZfmLTUShzmQkvnBqbU4iHuvfHUXH5v4jntCwkVZ8GAZ7LXXLUtDmLcdjvXWwkQDnyVWC/m2KMNKGWKegghoaDomFiioxFLVgAHMbl2jt2/YtSzWNEsUxDuqi64ELLJlgBZkrd6rRpERIoT1hI78CswyycDhW0uizYUBx5FhYqiW1ENcEv9RhTMzQVUFiUtTR5Hd/3VMnQ9p5LzTj+CcwiugUrbqu5ot9e32AWaQ9Rjsty/3X8Q==
+  encrypted_text: ycCJzMW+zleSUtihNuP6xg+s/uUYFZuaNPhpOrKsVEYS5Pl/Y5MqPtsrskZVnEwn5cEn1fYIguIJHyUgCI/cTbCPLpJNl6Cc0byUBF86dHNGhtBC1ovG9QujNh2D6PVhVAiLztCJIs8M47ceXU75eL+x5fgvQ4WM3HCPqObqShsqCsldDa7QJ4HULDiO+auf8C7zv2KGaRHF9/8p9cncOYpbWY1pi9DQSpWHI3HpFZiIG0w52eNSKbo9yjrDTom8A0BoCFu4X6AuZbqmKStnmalD1Xqd4QR+hJWWSxExi18=
+  learner_created: false
+- name: test/tests.kt
+  visible: false
+  encrypted_text: ITs8Nv8EH6QWJG5nufD7nCbrLPoZNTYAX8EbQHppKy8S+0d6SUuSBLOWeXdkV1kqhF6tdX++Wpr5gqxVx29oHW42k05yXHIJMR4L2JKkV/SauWfJmFbFkCq3ukGl0EQ6WtGzjO21aqD0zBR3rJKIBwEmOL2Gg0pCgxkyuREB9WFjPo3PN21jAeKkg5YZQS7bjWZCpqvJumYVtpkEy9bg5jscxeJb1qbv10VHC4rw6SD6x7lc4eNgWk/53xKRZ73UymW2gI2cRAq6Yy0UxC7pMzzixGzwWhCV4n3kMCMmg0kdEvKzXW6G8Lqkyj1m62hGQuOX9QOk483dYDBSKsZb5kkdS48fsRMyRG1bCH0SARy8vTMFPD2DUwDlE6k3YHb0Cv9TA0naFsjtYDqG03EpTS9rOTtr3OGNcoXnFdv13wErj+PMJXiCbKZKZGB91Ut2pdd2ePSWs++h62dbMl01+HgmVEYy0tf6MLu2rabftz2ek56xlrVz2nw3LIcMbauDrRIKwFOaMGOoFt9oWHS0ZrcYjNbrL5BKBT8eGRhby+RIuy+uNJ9noEUCGibfBVP5/JOy2XrSmQJlrI+daGO3gqHsMRurWeE57pAd2WFnZuychROlxUXTQAq9dzHrMctaQdUnGhhutXmW0aaBs7JKWZWr6ofjlYvMj/7BWhSf+HyELeYBqDYvc1JEBpxfFDy31PxcWkozAIV6F0v9kFx7Z11LbTr8gUkEiR0ft4YMiSIoK7GRSF05JN3gYg/E9EHq7MiM6Z2iP9WS2SIT0ohnPg==
+  learner_created: false
+status: Unchecked
+record: -1

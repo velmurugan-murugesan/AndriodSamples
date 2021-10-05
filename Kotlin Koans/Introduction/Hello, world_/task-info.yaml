@@ -1,0 +1,27 @@
+type: edu
+custom_name: Hello, world!
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 22
+    length: 4
+    placeholder_text: TODO()
+    initial_state:
+      length: 6
+      offset: 22
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: iBBRH3yyNCy0qb5WuTm5bA==
+  encrypted_text: qOHZ02/7OUcQL++aiVVaf2FiKbkgiWdezAA8EWlwXnM=
+  learner_created: false
+- name: test/tests.kt
+  visible: false
+  encrypted_text: ITs8Nv8EH6QWJG5nufD7nCbrLPoZNTYAX8EbQHppKy+TR7uFhZF7JnSL5/nnFJttdNVbvgosnirhvrRgmzUQYG50Wl7iGNHdS9EyVrfoHZxbj1O5locNEu+5lroTNfFNqOO37TB24Sw4J+nG2VReZJiSJ/Mme3AJlUckiH8nkwR8qNQprtA3aEU8ab9e8gu1H+qyPfGuwRyybU8E70EjVJXbOuKDmPszYd1XDT6d/kw=
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 15 Sep 2021 07:24:06 UTC
+record: -1

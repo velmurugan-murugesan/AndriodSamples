@@ -1,0 +1,33 @@
+type: edu
+custom_name: Triple-quoted strings
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 162
+    length: 13
+    placeholder_text: .trimIndent()
+    initial_state:
+      length: 13
+      offset: 162
+    initialized_from_dependency: false
+    selected: false
+    status: Failed
+    encrypted_possible_answer: dvM3EkWOD+M8hSdDYXjZmbZJ6slxLv+pA5C9zwH+ISo=
+  encrypted_text: GwcZZaXsH0clinwW0lpuM4Rbvdd9Q76Afd1NjJq5KKDe17OTYhGjAnUSpaD9rvV+UhfpIoZay/w2yYGRQMNHFLt0+0cAME9R8UUbIFi12rrjfM+XcxA5/gfI18AfbK//O0TcHIcwhcIfWF1p0ez1v0lN73iXg1yHTR5EarhA3uONoP33/aMvSoOe0ld0IOhrZRE0A8VKZ3/C7aKNORg3lw4zJFIFLyKvdSpAjiYC2ztbln2YVEvMYhr1zqX1L0dwlRrrf41KTWZEOmX8ji5/eYsmmz/AeX3ybuU15GdeXEI=
+  learner_created: false
+- name: test/Tests.kt
+  visible: false
+  encrypted_text: ITs8Nv8EH6QWJG5nufD7nCbrLPoZNTYAX8EbQHppKy+TR7uFhZF7JnSL5/nnFJttOoUbKzjzjKMy0T1IKOzzSDoOeK+zndv76BFBSLtHZcP/e3MqAcGDqQYN16YRpOVVJ8dn10F+Tvz5q8Lw5sDS9X3QqFvb39W31vRHgq6l1YwxrPx63VwtAUUVxVC1nv5Oh1MM3n95U19IiVs2YpkcU+eOMVBYmUitURKMAFSITT3kCkAE+yOgdw4qFIAWtQCu6VixTEig/PdYIcr7oQrQE8f5+Uur/5kExB/wYNqlvUEthpPprMxcvRl2L2KpLHfBzhuaWBlcpQpvUP2z09paSHdIgL88N/5PMegyjYUuEbAWJrd9uunX1jsPwo9iuUk8C9qLDCXo5yPS4fzXbWFIkJV9RwCw4SzGUeXyTNZSyE3d34jON1ZF1V8DTFYgALr95DzGpbMXMZUSR2QFUan7KNdBhNu+46u+EOcEA7Tzw9KJ4uh1Dil3XeayjFI+4rkJ
+  learner_created: false
+status: Failed
+feedback:
+  message: The margin prefix shouldn&#39;t be present in the resulting string
+  time: Wed, 15 Sep 2021 07:30:51 UTC
+  expected: |-
+    #question = "life, the universe, and everything"
+    #answer = 42
+  actual: |-
+    question = "life, the universe, and everything"
+    answer = 42
+record: -1

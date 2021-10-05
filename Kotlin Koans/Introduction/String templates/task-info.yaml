@@ -1,0 +1,24 @@
+type: edu
+custom_name: String templates
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 92
+    length: 6
+    placeholder_text: TODO()
+    initial_state:
+      length: 6
+      offset: 92
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: 1yQsjiT7QaMKUvnAfUlONyRUeWbjhpR/igqBOfFtIF8=
+  encrypted_text: Eq7e3OsF33RsMZ4AwvCPl+lTgUJBouKuvdgYHh4a+7Y6FZxHJt64sw7RjYLuU2YZvLEMpbqB3mZnG3AmeF8AQqrQVWedluRzIeqGi7LvBsDnZ9yuUGu0/bNZn5HdxYtwzA1gHkamuDUWDHMqdXw7lw==
+  learner_created: false
+- name: test/tests.kt
+  visible: false
+  encrypted_text: ITs8Nv8EH6QWJG5nufD7nKf4miLa5dzLLS2XlTof0JGHJM59oG3LTMziX2u9P6j/xVbCUAZ5YiDdnWlcMtA1JasXl1wOpEvfxI8MPcABWHZ9Viinrcgr4X5YnUZa05icap14WXdhE4l/A8umo6GKVYxbdHTxhSLKAo3iNigjaK8uQpBOoQSF43Od036SH7+aSM/esQCnL/Nk4Bnhh1fV4PwD17JbWXQGYAgiJDfDBLEa2nigqnEJP0qWCE9+fO5jGoOJMIfMFHQmqqXIctQ4EraPXynOR3uTkV8KMR5vOS4XHPA//4n5sobTIjK1QAWjalxjqxERLsmAQ/aSZAXMNbMZTdpZ8MOR+7SinkzUMsTNVNGHRRwTOeHUNrACpm1hHqfIq8AZvG/2n9WOjREAg5Z4BHYq+jCiVecZaMVsQeF/VrmVkPxLCafGxy1aVK/dfJjJSt8cPJb1HhOsneSPL/kxLq03JxUL+ePcuFiddTzrcuukrYQw9tZvDiypNbmbx9ljJfnYWPVdLyVt7j4ufy6W5vonZhbWFp8MUXdXdZdVeZsKCKs9L0TEZWJ13sSuXDv2Q+eP7EieqzGpaB4wlklwcaOoqobovjIgaRiGVA164f28ze+Hyvyq0UaZGkj2x723pZjvboZRnyvjO5qB+TEVgjqAo5PDhUJsS3sSKbzjQmgXmEg00BTQB6j5FNE64h5vC6tkLQ479DvEwqLmY26A09ZfaGi8YWULpyuPigUfkaBX5dGEtdSraLcqY6PKcH/6beY/IZCiSP99H7XQ5b5/QZt3z/egmGuy0jccrYn+70wcoXdItFlT6YZMvS3a
+  learner_created: false
+status: Unchecked
+record: -1

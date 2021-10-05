@@ -1,0 +1,24 @@
+type: edu
+custom_name: Data classes
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 12
+    placeholder_text: class Person
+    initial_state:
+      length: 12
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: YtRti9Nre+16DtuLhrUu610Zs9C2zHuHEeLeV87e6Qnzv5Y92AvPEe0RmykVWgE6N8gznmR4aG8giKZqEPLFdg==
+  encrypted_text: EYzeie1b7f9LYG3KyQyyNyyfwtZsyJ+1iV4zz+GVgtMcTETnz/mwC1q2tx3KGbyzb6FrYzxIorxcOdSF0zhdh3wx+bTz8PDaePHNHyFaAmV5CSD70JJ/4grUs18o/D46IbTpI8PjaFZuEjo1lnZGav8BO9lF9UeAepAIPuPPrnSr43OEckdFL+t00LhoxZlPs5t0EKpy5w9jrQAnGQgxEYzypm31Kv6Rd2gfQ7aW6VySApLrnSGUrexpZ9uX4px8oH5I6qViyrccgrjTO78PiFw2uK/0VWNovIzMTB+3kDboOzhFpUcvRGhYwrfuTeAKQ0H92hCwu1AQKOprlXqo9w==
+  learner_created: false
+- name: test/tests.kt
+  visible: false
+  encrypted_text: ITs8Nv8EH6QWJG5nufD7nCbrLPoZNTYAX8EbQHppKy+TR7uFhZF7JnSL5/nnFJttGoNYtDT326z5LrwOmJk+vZZPZdphBh6aaNEYWF866YdqSv4Vt2GYOE3pMoQV2ki9/YDtcfKNFIFzPwtfbtne2g3iOvV9M5rjfm5JGGRs06+e2ImaYeAxNyE4HBhHDpmCaycCWXr1XWTFLL3ndydm+dXELiOduFzorGgvdCdG4lk6d7QlS7I53cz+uiIVcE8G9QQbzsId4umdUBE7dCJY1AvdAOZhOv5A043vKPovR6Eojd/R4yRN24GlPMAVBRP4489x5DHGfxhFplmhpO5ZdaY8/AHAS+k+ZU44Cs5cKKSF7yMMSi4qqDUlZZ/aHRpcs1i1JxjwMgX3CQiPl1zt1wanNyNnBjSe/FjduKegwP++xq6hdUK0x/1pWPcat/dh/mXDbFlxltMJYpRx0meIeGVDhEo7o8dNmqDgABd6FgGhmqr0iq3cVfIP1aD6pagYdKpmdVlJbnKgJ4VErmWU43NLXKUzd4ZHDS7ocRZqDpzSQm4dHq/G+IbdRHS0qyrfTGIe2Fgqi+cKNesBzT2OsEPXxYuMqtgRBtcFCTujsp2zHAnxa8qaQ/6czI6H6JcrZAu5GNrjEb3OHXM5p4yzKA==
+  learner_created: false
+status: Unchecked
+record: -1

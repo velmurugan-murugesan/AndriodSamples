@@ -1,0 +1,34 @@
+type: edu
+custom_name: Extension functions
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 30
+    length: 6
+    placeholder_text: TODO()
+    initial_state:
+      length: 6
+      offset: 30
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: +dWbxqweB4pF06I+SIpR4c+3CfhME/xImFTdEP8Qya8=
+  - offset: 79
+    length: 6
+    placeholder_text: TODO()
+    initial_state:
+      length: 6
+      offset: 79
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: fdjFBwAZnHLSezsWCZwZY5pP+YhOmrnoGV/Z527tPi8=
+  encrypted_text: /c98NcwfzAweMp3jVyZFpybaR5iP8SueTQT6aUYCGvfNuglSrBfg/Y78My9pbb2cGg+AuK1cKnKyejMAiFbjIb6sOrI7svOFbjPAFxGU7Gb0CS+56S1TdQDDBGSx1gSETll2rH7mhP204wlHp0Xpm8Li2PNCZPyypp1og6WsThXT0iT2O3s50zKdPeb83LsmNBLtsuy6sa4Esma8MzxNMQ==
+  learner_created: false
+- name: test/tests.kt
+  visible: false
+  encrypted_text: ITs8Nv8EH6QWJG5nufD7nKf4miLa5dzLLS2XlTof0JGHJM59oG3LTMziX2u9P6j/UdwWNUyuDB0fmTLhXTMRRNMprC1/Aa2QHI0Sc03gSy4ALg62T/P80f3qDeAf+SdLqlBuG5AsPxmyKrrYUbzP9CtYp7vfxuYTtKNWt0Lojmt/d5Wuv6ZW69KVBmQtZ2vhoL4YMgQv8GYxL0d9JXgSSQTxcX3BQjqNC44P/1MiCA+9HvSoOKgx+rINUx1O8HTduCX4r+gN89yb8y2As/K49FXVdjCJinj6XX40angmrW2g7EN8mnOWT4tmiEKpdhsxmFPOh3r740NXcqYj6ahPhoy7XiLc0HYtNc1fKoKPpKNSZ8M5m0KEbjgOKKEhlHFJW+hH9v0K9GkHiAU5qr7CFytLRaDDIhRrwAt82R5LyhwOPkBVKRu3D0bBj+sm//iNn5TkX7C0eptWXSgxldLzowTRLPl6CuboAYwmPHR1i1EJShgtPYYmxKWkBD6UL/Eodf3gE99XF7kqoxY+4CZSKLuu+akdGLIpVhn6Z0xZjQo=
+  learner_created: false
+status: Unchecked
+record: -1
