@@ -1,5 +1,7 @@
 package com.velmurugan.kotlincoroutinesexample
 
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -12,6 +14,12 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        val vinNumber = "aa111 a111111"
+        val res = vinNumber.matches(Regex("[a-zA-Z0-9]+ [0-9]+"))
+        assertEquals(true, res)
+
+
     }
+
+
 }
