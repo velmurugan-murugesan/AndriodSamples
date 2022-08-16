@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/lbltitle"
+        style="@style/TextAppearance.Compat.Notification.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:text="Hello World" />
+
+    <TextView
+        android:id="@+id/lbltext"
+        style="@style/TextAppearance.Compat.Notification.Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbltitle"
+        android:layout_marginTop="10dp"
+        android:text="Info text" />
+
+    <TextView
+        android:id="@+id/textReject"
+        style="@style/TextAppearance.Compat.Notification.Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbltext"
+        android:layout_margin="8dp"
+        android:text="Reject" />
+
+    <TextView
+        android:id="@+id/textAccept"
+        style="@style/TextAppearance.Compat.Notification.Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textReject"
+        android:layout_below="@+id/lbltext"
+        android:layout_margin="8dp"
+        android:text="Accept" />
+
+
+
+
+</RelativeLayout>
